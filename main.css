@@ -1,0 +1,284 @@
+/* ==== GENERAL STYLES ==== */
+
+* {
+box-sizing: border-box;
+}
+
+/* Single-direction margin declaration to establish vertical rhythm. */
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+body {
+  background: url('assets/mainBackgroud8630345728_n.jpg') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+
+.locations,
+.program,
+.gifts,
+.questions-answers,
+.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+/* ==== HEADER STYLES ==== */
+
+.cover {
+  background: url('assets/coverBackground_1134376540197355520_n.jpg') no-repeat 70% center/cover;
+  display: table;
+  text-align: center;
+  height: 100vh;
+  width: 100vw; 
+}
+
+.head-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.head-text-wrapper {
+  background: hsla(100,0%,0%,.6);
+  color: hsla(0,0%,100%,.9);
+  margin: 0 auto;
+  padding: .625rem;
+}
+
+h1 {
+  color: #d2ba87;
+  font-size: 3rem;
+  margin-bottom: 0; /* To negate the effect of the single-direction margin declaration. */
+}
+
+.tagline {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+}
+
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12rem;
+  margin: .5rem auto;  
+}
+
+.date {
+  vertical-align: middle;
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+@media (min-width: 768px) {
+  
+.cover {  
+  background: url('https://scontent.fltn1-1.fna.fbcdn.net/v/t1.0-9/41129061_1908404895907161_1134376540197355520_n.jpg?_nc_cat=0&oh=b47fd67537ab646d02c61af9e490b940&oe=5BEDF55C') no-repeat center/cover;
+  }
+  
+  .head-text-wrapper {
+  border-radius: 5px;
+  height: 16rem;
+  width: 60rem;
+  }
+  
+  h1 {
+  font-size: 6rem;
+  }
+}
+
+
+
+/* ==== LOCATIONS STYLES ==== */
+
+img {
+  height: 7.5rem;
+}
+
+.loc-section::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+
+p {
+  font-family: 'Muli', sans-serif;
+}
+
+@media (min-width: 768px) {
+   .loc-section {
+     display: inline-block;
+     width: 30%;
+     padding: 2rem;
+  }
+  
+  .loc-section::after {
+  display: none;
+  }
+}
+
+/* ==== PROGRAM STYLES ==== */
+
+.program {
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  text-align: left;
+  font-family: 'Muli', sans-serif;
+  width: 100vw;
+}
+
+.program h2 {
+  text-align: center;
+}
+
+.program-wrapper p {
+  font-style: italic;
+}
+
+.program ul {
+  letter-spacing: .025rem;
+}
+
+@media (min-width: 768px) {
+.program-wrapper {
+  margin: 0 auto;
+  width: 30vw;
+}
+}
+
+/* ==== GIFTS STYLES ==== */
+
+.gifts p {
+  font-weight: 700;
+  letter-spacing: .02rem;
+}
+
+/* ==== QUESTIONS-ANSWERS STYLES ==== */
+
+.questions-answers {
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  text-align: left;
+  width: 100vw;
+  font-size: 1rem;
+}
+
+.questions-answers h2, h3 {
+  text-align: center;
+}
+
+.question {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.answer {
+  margin-bottom: 1.5rem;
+}
+
+.question-group::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 40vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+
+@media (min-width: 768px) {
+  
+  .question-group {
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+    padding: 3rem;
+  }
+  
+  .question-group h3 {
+    text-align: left;
+  }
+  
+  .question-group::after {
+    display: none;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+}
+
+/* ==== FOOTER STYLES ==== */
+
+.footer-wrapper {
+  background: hsla(100,0%,0%,.6);
+  text-align: center;
+  padding: 1rem 1rem;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer small {
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+
+  footer {
+    min-height: 7vh;
+  }
+
+}
+
+
+
+
+
+
+
